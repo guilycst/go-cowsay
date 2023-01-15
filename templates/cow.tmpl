@@ -1,0 +1,59 @@
+ _______________________ 
+{{ range .text }}< {{.}} >
+{{else}}<        Moooooo!       >
+{{ end }} ----------------------- 
+{{- if .borg}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}=={{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{- else if .dead}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}xx{{end}})\_______
+            (__)\       )\/\
+             U  ||----w |
+                ||     ||
+{{- else if .greedy}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}$${{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{- else if .paranoid}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}@@{{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{- else if .stoned}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}**{{end}})\_______
+            (__)\       )\/\
+             U  ||----w |
+                ||     ||
+{{- else if .tired}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}--{{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{- else if .wired}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}OO{{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{- else if .youthful}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}..{{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{else}}
+        \   ^__^
+         \  ({{- if .has_eye_string}}{{.eye_string}}{{else}}oo{{end}})\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+{{end}}
